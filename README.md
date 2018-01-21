@@ -1,6 +1,6 @@
-#About
+## About
  Routing Implementation with user profile and sales two components(path/routes).
-#run
+##Run
 run npm install
 then ng serve ( if angular cli already installed)
 

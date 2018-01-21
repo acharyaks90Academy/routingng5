@@ -1,0 +1,24 @@
+Menu
+<ul>
+  <li>
+   
+      <a routerLink="/user" routerLinkActive="active" >User Profile</a>
+  </li>
+  <li> <a routerLink="/sales" routerLinkActive="active">Sales</a>
+  </li>
+</ul>
+<!-- <ul >
+  <li >
+  <button (click)="showHide('user')" >User Profile</button> 
+  </li >
+  <li >
+    <button (click)="showHide('sales')">Sales</button>
+  </li>
+</ul>
+
+
+<app-sales *ngIf="boolShowSales" ></app-sales>
+<app-user-profile *ngIf="!boolShowSales"></app-user-profile>  -->
+
+
+<router-outlet></router-outlet>

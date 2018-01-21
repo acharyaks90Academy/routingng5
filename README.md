@@ -1,6 +1,33 @@
 ## About
  Routing Implementation with user profile and sales two components(path/routes).
-##Run
+
+## Description 
+ importing RouterModule , Routes 
+ `import { RouterModule , Routes } from '@angular/router';`
+
+ Definiing Routes
+ `const appRoutes: Routes = [
+  { path: 'sales',
+    component: SalesComponent
+   },
+  {
+    path: 'user',
+    component: UserProfileComponent
+  },
+
+  {
+    path: '',
+    redirectTo: '/user',
+    pathMatch: 'full'
+  },
+  { path: '**',  //Defualt Url
+    component: PageNotFoundComponent
+   }
+];`
+Giving Routes 
+`RouterModule.forRoot(appRoutes)`
+ 
+## How To Run
 run npm install
 then ng serve ( if angular cli already installed)
 
